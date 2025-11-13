@@ -923,6 +923,10 @@ img {
   visibility: visible;
 }
 
+.contact-form__success.is-error {
+  color: #d14343;
+}
+
 .contact__info {
   background: var(--card);
   border-radius: var(--radius-large);

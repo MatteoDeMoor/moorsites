@@ -288,20 +288,20 @@
             <h2 class="section-heading__title" data-i18n="contact.title"></h2>
             <p class="section-heading__description" data-i18n="contact.description"></p>
           </div>
-          <form class="contact-form" novalidate>
+          <form id="contact-form" class="contact-form" novalidate>
             <div class="contact-form__group">
-              <label for="name" data-i18n="contact.form.name.label"></label>
-              <input type="text" id="name" name="name" autocomplete="name" required placeholder="" data-placeholder="contact.form.name.placeholder" />
+              <label for="from_name" data-i18n="contact.form.name.label"></label>
+              <input type="text" id="from_name" name="from_name" autocomplete="name" required placeholder="" data-placeholder="contact.form.name.placeholder" />
               <span class="contact-form__error" data-i18n="contact.form.name.error"></span>
             </div>
             <div class="contact-form__group">
-              <label for="email" data-i18n="contact.form.email.label"></label>
-              <input type="email" id="email" name="email" autocomplete="email" required placeholder="" data-placeholder="contact.form.email.placeholder" />
+              <label for="reply_to" data-i18n="contact.form.email.label"></label>
+              <input type="email" id="reply_to" name="reply_to" autocomplete="email" required placeholder="" data-placeholder="contact.form.email.placeholder" />
               <span class="contact-form__error" data-i18n="contact.form.email.error"></span>
             </div>
             <div class="contact-form__group">
-              <label for="company" data-i18n="contact.form.company.label"></label>
-              <input type="text" id="company" name="company" autocomplete="organization" placeholder="" data-placeholder="contact.form.company.placeholder" />
+              <label for="company_name" data-i18n="contact.form.company.label"></label>
+              <input type="text" id="company_name" name="company_name" autocomplete="organization" placeholder="" data-placeholder="contact.form.company.placeholder" />
             </div>
             <div class="contact-form__group">
               <label for="message" data-i18n="contact.form.message.label"></label>
@@ -309,7 +309,7 @@
               <span class="contact-form__error" data-i18n="contact.form.message.error"></span>
             </div>
             <button type="submit" class="button button--primary" data-i18n="contact.form.submit"></button>
-            <p class="contact-form__success" role="status" aria-live="polite" data-i18n="contact.form.success"></p>
+            <p id="status" class="contact-form__success" role="status" aria-live="polite"></p>
           </form>
         </div>
         <aside class="contact__info">
@@ -359,6 +359,70 @@
       </div>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function () {
+      const PUBLIC_KEY = window.EMAILJS_API_KEY;
+      const SERVICE_ID = "service_fsrg2lg";
+      const TEMPLATE_ID = "template_mic35lm";
+      const form = document.getElementById("contact-form");
+      const statusNode = document.getElementById("status");
+
+      const setStatus = (message, isError = false) => {
+        if (!statusNode) return;
+        statusNode.textContent = message;
+        if (message) {
+          statusNode.classList.add("is-visible");
+        } else {
+          statusNode.classList.remove("is-visible");
+        }
+        statusNode.classList.toggle("is-error", Boolean(isError));
+      };
+
+      if (!form || !statusNode) {
+        return;
+      }
+
+      if (typeof emailjs === "undefined") {
+        console.error("EmailJS bibliotheek kon niet geladen worden.");
+        setStatus("Er ging iets mis. Probeer later opnieuw.", true);
+        return;
+      }
+
+      if (!PUBLIC_KEY) {
+        console.error("EmailJS public key is niet ingesteld. Zorg dat EMAILJS_API_KEY beschikbaar is.");
+        setStatus("Er ging iets mis. Probeer later opnieuw.", true);
+        return;
+      }
+
+      emailjs.init(PUBLIC_KEY);
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (typeof window.moorsitesValidateContactForm === "function" && !window.moorsitesValidateContactForm()) {
+          setStatus("");
+          return;
+        }
+
+        setStatus("Bezig met verzenden...");
+
+        emailjs
+          .sendForm(SERVICE_ID, TEMPLATE_ID, form)
+          .then(function () {
+            setStatus("Bericht verzonden! 👍");
+            form.reset();
+            if (typeof window.moorsitesClearContactFormState === "function") {
+              window.moorsitesClearContactFormState();
+            }
+          })
+          .catch(function (error) {
+            console.error("EmailJS fout:", error);
+            setStatus("Er ging iets mis. Probeer later opnieuw.", true);
+          });
+      });
+    })();
+  </script>
   <script type="module" src="app.js"></script>
 </body>
 </html>

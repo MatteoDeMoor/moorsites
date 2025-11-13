@@ -763,32 +763,28 @@ contactForm?.querySelectorAll('input, textarea, select').forEach((field) => {
   field.addEventListener('blur', () => validateField(field));
 });
 
-contactForm?.addEventListener('submit', (event) => {
-  event.preventDefault();
-  let formIsValid = true;
-  const fields = contactForm.querySelectorAll('input, textarea, select');
-  fields.forEach((field) => {
-    if (!validateField(field)) {
-      formIsValid = false;
-    }
-  });
-  const successNode = contactForm.querySelector('.contact-form__success');
-  if (formIsValid) {
-    successNode?.classList.add('is-visible');
-    contactForm.reset();
+if (typeof window !== 'undefined') {
+  window.moorsitesValidateContactForm = () => {
+    if (!contactForm) return true;
+    let formIsValid = true;
+    const fields = contactForm.querySelectorAll('input, textarea, select');
     fields.forEach((field) => {
-      if (field.dataset.placeholder) {
-        field.dispatchEvent(new Event('blur'));
+      if (!validateField(field)) {
+        formIsValid = false;
       }
     });
+    return formIsValid;
+  };
+
+  window.moorsitesClearContactFormState = () => {
+    if (!contactForm) return;
+    const fields = contactForm.querySelectorAll('input, textarea, select');
     fields.forEach((field) => {
       const group = field.closest('.contact-form__group');
       group?.querySelector('.contact-form__error')?.classList.remove('is-visible');
     });
-  } else {
-    successNode?.classList.remove('is-visible');
-  }
-});
+  };
+}
 
 const yearNode = document.getElementById('current-year');
 if (yearNode) {
