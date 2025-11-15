@@ -45,7 +45,7 @@ const translations = {
         text: "Ik hou je site up-to-date zodat alles blijft werken zoals het hoort.",
         bullets: [
           "Inhoud en visuals aanpassen wanneer nodig",
-          "Technische updates en beveiliging",
+          "Technische updates",
           "Snelle ondersteuning bij vragen"
         ]
       },
@@ -54,8 +54,8 @@ const translations = {
         text: "Geen gedoe met technische instellingen: ik regel domein en hosting voor je.",
         bullets: [
           "Registratie en beheer van je domeinnaam",
-          "Betrouwbare hosting met back-ups",
-          "Monitoring van prestaties en veiligheid"
+          "Betrouwbare hosting",
+          "Monitoring van prestaties"
         ]
       }
     },
@@ -107,9 +107,8 @@ const translations = {
         },
         {
           name: "Flex",
-          price: "In overleg",
+          price: "Op maat",
           features: [
-            "In overleg",
             "Extra pagina's of functionaliteit",
             "Maandelijkse ondersteuning mogelijk",
             "Facturatie per maand of project"
@@ -153,7 +152,7 @@ const translations = {
     contact: {
       eyebrow: "CONTACT",
       title: "Samen iets bouwen?",
-      description: "Laat iets weten en ik reageer persoonlijk binnen twee werkdagen.",
+      description: "Laat een bericht achter en ik neem persoonlijk contact met je op.",
       info: {
         title: "Direct mailen",
         text: "Stuur me gerust je idee of vraag.",
@@ -239,7 +238,7 @@ const translations = {
         text: "I keep your site up to date so everything keeps working smoothly.",
         bullets: [
           "Content and visuals updated when needed",
-          "Technical updates and security",
+          "Technical updates",
           "Quick support whenever you need it"
         ]
       },
@@ -248,8 +247,8 @@ const translations = {
         text: "No hassle with technical settings: I arrange domain and hosting for you.",
         bullets: [
           "Domain registration and management",
-          "Reliable hosting with backups",
-          "Monitoring of performance and security"
+          "Reliable hosting",
+          "Monitoring of performance"
         ]
       }
     },
@@ -303,7 +302,6 @@ const translations = {
           name: "Flex",
           price: "Custom",
           features: [
-            "Flexible scope",
             "Additional pages or functionality",
             "Monthly support available",
             "Monthly or project-based billing"
@@ -348,7 +346,7 @@ const translations = {
     contact: {
       eyebrow: "CONTACT",
       title: "Ready to build together?",
-      description: "Drop me a line and I'll reply within two business days.",
+      description: "Please leave a message and I will contact you personally.",
       info: {
         title: "Email directly",
         text: "Send over your idea or question.",
