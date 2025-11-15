@@ -89,7 +89,7 @@ const translations = {
         },
         {
           name: "Basic",
-          price: "Vanaf €795",
+          price: "Vanaf €745",
           features: [
             "Max 5 pagina's",
             "Uniek design",
@@ -100,7 +100,7 @@ const translations = {
           name: "Plus",
           price: "Vanaf €995",
           features: [
-            "Max 5 pagina's",
+            "Max 10 pagina's",
             "Uniek design",
             "Responsive design"
           ]
@@ -282,7 +282,7 @@ const translations = {
         },
         {
           name: "Basic",
-          price: "From €795",
+          price: "From €745",
           features: [
             "Up to 5 pages",
             "Unique design",
@@ -293,7 +293,7 @@ const translations = {
           name: "Plus",
           price: "From €995",
           features: [
-            "Up to 5 pages",
+            "Up to 10 pages",
             "Unique design",
             "Responsive design"
           ]
