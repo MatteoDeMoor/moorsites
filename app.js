@@ -22,7 +22,7 @@ const translations = {
     },
     hero: {
       eyebrow: "ZELFSTANDIGE WEBBOUWER",
-      subtitle: "Ik bouw duidelijke websites die passen bij jouw verhaal.",
+      subtitle: "Ik bouw duidelijke en betaalbare websites die passen bij jouw verhaal.",
       pitch: "Als éénmansstudio combineer ik design en front-end ontwikkeling om snelle, onderhoudsvrije sites op te leveren.",
       primaryCta: "Contact opnemen",
       secondaryCta: "Bekijk pakketten"
@@ -32,30 +32,30 @@ const translations = {
       title: "Simpele websites zonder gedoe",
       description: "Geen complexe backend of overbodige features: ik bouw overzichtelijke sites die makkelijk te beheren zijn.",
       webdesign: {
-        title: "One-page websites",
-        text: "Snel online met een compacte pagina die precies vertelt wie je bent.",
+        title: "Website",
+        text: "Een duidelijke website die klopt met jouw huisstijl en verhaal.",
         bullets: [
-          "Heldere structuur en call-to-action",
-          "Responsief ontwerp voor mobiel en desktop",
-          "Contactformulier of afsprakenlink"
+          "Ontwerp afgestemd op jouw huisstijl",
+          "Structuur die jouw verhaal helder maakt",
+          "Geoptimaliseerd voor mobiel en desktop"
         ]
       },
       development: {
-        title: "2 à 3 pagina's",
-        text: "Een kleine site met ruimte voor diensten, over mij en contact zonder technische ballast.",
+        title: "Onderhoud",
+        text: "Ik hou je site up-to-date zodat alles blijft werken zoals het hoort.",
         bullets: [
-          "Navigatie op maat",
-          "Aanpasbare secties in duidelijke blokken",
-          "Techniek blijft licht en onderhoudsvriendelijk"
+          "Inhoud en visuals aanpassen wanneer nodig",
+          "Technische updates en beveiliging",
+          "Snelle ondersteuning bij vragen"
         ]
       },
       optimization: {
-        title: "Ondersteuning",
-        text: "Wil je later uitbreiden of maandelijks bijsturen? Ik blijf beschikbaar als sparringpartner.",
+        title: "Domein & hosting",
+        text: "Geen gedoe met technische instellingen: ik regel domein en hosting voor je.",
         bullets: [
-          "Extra pagina's of modules op aanvraag",
-          "Updates en kleine optimalisaties",
-          "Maandelijkse rapportage mogelijk"
+          "Registratie en beheer van je domeinnaam",
+          "Betrouwbare hosting met back-ups",
+          "Monitoring van prestaties en veiligheid"
         ]
       }
     },
@@ -68,7 +68,7 @@ const translations = {
         { title: "Structuur", text: "Ik stel een sitemap en wireframes voor die passen bij een compacte website." },
         { title: "Eerste versie in code", text: "Ik bouw meteen in code en deel een klikbare versie zodat je alles kunt uitproberen." },
         { title: "Itereren tot het klopt", text: "We plannen korte feedbackrondes en sturen bij tot de site 100% goed voelt." },
-        { title: "Oplevering", text: "We lopen alles samen door en ik bezorg je duidelijke instructies voor beheer." }
+        { title: "Oplevering", text: "We lopen alles samen door en ik zorg daarna voor het beheer en de updates." }
       ]
     },
     pricing: {
@@ -79,33 +79,40 @@ const translations = {
       cta: "Plan een kennismaking",
       plans: [
         {
-          name: "One-page start",
-          price: "€695",
+          name: "Budget",
+          price: "Vanaf €495",
           features: [
-            "Één pagina met duidelijke structuur",
-            "Design afgestemd op jouw huisstijl",
-            "Responsief en snel",
-            "Techniek blijft licht en eenvoudig te beheren"
+            "1 pagina",
+            "Uniek design",
+            "Responsive design"
           ]
         },
         {
-          name: "Compact verhaal",
-          price: "€995",
+          name: "Basic",
+          price: "Vanaf €795",
           features: [
-            "2 à 3 pagina's op maat",
-            "Navigatie en contactsectie",
-            "Ondersteuning bij copy",
-            "Videocall bij oplevering"
+            "Max 5 pagina's",
+            "Uniek design",
+            "Responsive design"
           ]
         },
         {
-          name: "Flex traject",
+          name: "Plus",
+          price: "Vanaf €995",
+          features: [
+            "Max 5 pagina's",
+            "Uniek design",
+            "Responsive design"
+          ]
+        },
+        {
+          name: "Flex",
           price: "In overleg",
           features: [
+            "In overleg",
             "Extra pagina's of functionaliteit",
             "Maandelijkse ondersteuning mogelijk",
-            "Facturatie per maand of project",
-            "Start met strategische intake"
+            "Facturatie per maand of project"
           ]
         }
       ]
@@ -181,8 +188,9 @@ const translations = {
     footer: {
       tagline: "Simpele websites voor ondernemers.",
       links: "Snel naar",
-      follow: "Volg mij",
-      credits: "Gemaakt door Moor Webstudio"
+      follow: "Volg Moor Webstudio",
+      credits: "Gemaakt door Moor Webstudio",
+      linkedin: "LinkedIn bedrijfspagina"
     }
   },
   en: {
@@ -208,7 +216,7 @@ const translations = {
     },
     hero: {
       eyebrow: "SOLO WEB CREATOR",
-      subtitle: "I build clear websites that fit your story.",
+      subtitle: "I build clear and affordable websites that fit your story.",
       pitch: "As a one-person studio I combine design and front-end development to ship fast, maintenance-light sites.",
       primaryCta: "Get in touch",
       secondaryCta: "View packages"
@@ -218,30 +226,30 @@ const translations = {
       title: "Simple websites without the bloat",
       description: "No heavy backends or unnecessary features—just clean sites that are easy to understand and maintain.",
       webdesign: {
-        title: "One-page websites",
-        text: "Launch quickly with a single page that tells the essentials.",
+        title: "Website",
+        text: "A clear website that matches your brand identity and story.",
         bullets: [
-          "Sharp structure with a clear CTA",
-          "Responsive across devices",
-          "Contact form or booking link"
+          "Design aligned with your branding",
+          "Structure that highlights your message",
+          "Optimized for mobile and desktop"
         ]
       },
       development: {
-        title: "2-3 page sites",
-        text: "A compact site covering your services, story, and contact details.",
+        title: "Maintenance",
+        text: "I keep your site up to date so everything keeps working smoothly.",
         bullets: [
-          "Custom navigation",
-          "Flexible sections in clear blocks",
-          "Lightweight tech that stays easy to maintain"
+          "Content and visuals updated when needed",
+          "Technical updates and security",
+          "Quick support whenever you need it"
         ]
       },
       optimization: {
-        title: "Ongoing support",
-        text: "Ready when you need extra pages or monthly updates after launch.",
+        title: "Domain & hosting",
+        text: "No hassle with technical settings: I arrange domain and hosting for you.",
         bullets: [
-          "Additional pages on request",
-          "Small updates and tweaks",
-          "Optional monthly reporting"
+          "Domain registration and management",
+          "Reliable hosting with backups",
+          "Monitoring of performance and security"
         ]
       }
     },
@@ -254,7 +262,7 @@ const translations = {
         { title: "Structure", text: "I outline a concise sitemap and wireframes for a compact build." },
         { title: "First version in code", text: "I prototype directly in code so you can click through the real thing right away." },
         { title: "Iterate until it fits", text: "We run short feedback loops and keep refining until everything feels spot-on." },
-        { title: "Launch", text: "We review together and I hand over clear guidance for upkeep." }
+        { title: "Launch", text: "We review everything together and I continue to take care of maintenance and updates." }
       ]
     },
     pricing: {
@@ -265,33 +273,40 @@ const translations = {
       cta: "Book an intro call",
       plans: [
         {
-          name: "One-page start",
-          price: "€695",
+          name: "Budget",
+          price: "From €495",
           features: [
-            "Single page with clear structure",
-            "Design aligned with your brand",
-            "Responsive and fast",
-            "Lightweight tech that's easy to maintain"
+            "1 page",
+            "Unique design",
+            "Responsive design"
           ]
         },
         {
-          name: "Compact story",
-          price: "€995",
+          name: "Basic",
+          price: "From €795",
           features: [
-            "2-3 tailored pages",
-            "Navigation and contact section",
-            "Copy support",
-            "Handover video call"
+            "Up to 5 pages",
+            "Unique design",
+            "Responsive design"
           ]
         },
         {
-          name: "Flexible partnership",
+          name: "Plus",
+          price: "From €995",
+          features: [
+            "Up to 5 pages",
+            "Unique design",
+            "Responsive design"
+          ]
+        },
+        {
+          name: "Flex",
           price: "Custom",
           features: [
-            "Additional pages or features",
-            "Optional monthly support",
-            "Flexible invoicing",
-            "Kick-off strategy session"
+            "Flexible scope",
+            "Additional pages or functionality",
+            "Monthly support available",
+            "Monthly or project-based billing"
           ]
         }
       ]
@@ -368,8 +383,9 @@ const translations = {
     footer: {
       tagline: "Simple websites for entrepreneurs.",
       links: "Quick links",
-      follow: "Follow me",
-      credits: "Crafted by Moor Webstudio"
+      follow: "Follow Moor Webstudio",
+      credits: "Crafted by Moor Webstudio",
+      linkedin: "LinkedIn company page"
     }
   }
 };

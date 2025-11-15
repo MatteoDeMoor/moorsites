@@ -990,6 +990,27 @@ img {
   gap: 0.75rem;
 }
 
+.footer__social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer__social-link:hover,
+.footer__social-link:focus-visible {
+  color: var(--accent);
+}
+
+.footer__social-link:hover .footer__icon,
+.footer__social-link:focus-visible .footer__icon {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
 .footer__icon {
   display: inline-flex;
   align-items: center;
