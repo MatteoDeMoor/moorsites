@@ -188,7 +188,6 @@ const translations = {
       tagline: "Simpele websites voor ondernemers.",
       links: "Snel naar",
       follow: "Volg Moor Webstudio",
-      credits: "Gemaakt door Moor Webstudio",
       linkedin: "LinkedIn bedrijfspagina"
     }
   },
@@ -382,7 +381,6 @@ const translations = {
       tagline: "Simple websites for entrepreneurs.",
       links: "Quick links",
       follow: "Follow Moor Webstudio",
-      credits: "Crafted by Moor Webstudio",
       linkedin: "LinkedIn company page"
     }
   }
