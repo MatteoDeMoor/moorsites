@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Over mij – Moor Webstudio</title>
+  <meta name="description" content="Leer Matteo De Moor kennen: zelfstandig webbouwer met een achtergrond in data engineering." />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="over-mij">
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Hoofd navigatie">
+      <a href="index.html" class="nav__logo" aria-label="Moor Webstudio homepage">
+        <img src="images/logo.png" alt="" aria-hidden="true" />
+        <span>Moor Webstudio</span>
+      </a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link" data-page="home">Home</a></li>
+          <li><a href="diensten.html" class="nav__link" data-page="diensten">Diensten</a></li>
+          <li><a href="werkwijze.html" class="nav__link" data-page="werkwijze">Werkwijze</a></li>
+          <li><a href="pakketten.html" class="nav__link" data-page="pakketten">Pakketten</a></li>
+          <li><a href="over-mij.html" class="nav__link" data-page="over-mij">Over mij</a></li>
+          <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="contact.html" class="button button--primary">Plan een kennismaking</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero__content">
+        <div>
+          <p class="section-heading__eyebrow">Over mij</p>
+          <h1 class="section-heading__title">Hallo, ik ben Matteo</h1>
+          <p class="section-heading__description">Zelfstandig webbouwer en data engineer. Ik houd van duidelijke communicatie en een website die simpelweg werkt.</p>
+        </div>
+        <div class="page-hero__cta">
+          <a class="button button--primary" href="contact.html">Plan een kennismaking</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__grid">
+        <div>
+          <div class="about__photo">
+            <img src="images/Matteo.jpg" alt="Portret van Matteo De Moor" width="320" height="320" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <h2>Wie ik ben</h2>
+          <p>Ik ben Matteo De Moor, afgestudeerd Bachelor AI & Data Engineering (HoGent, 2025) en momenteel werkzaam als data engineer. Met die technische basis bouw ik ook heldere websites voor zelfstandigen en kleine bedrijven.</p>
+          <p>Ik ontwerp en codeer zelf, waardoor lijnen kort blijven en je altijd met dezelfde persoon praat. Na oplevering zorg ik voor ondersteuning en onderhoud wanneer je dat wenst.</p>
+          <div class="badge-list">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+            <span class="badge">Python</span>
+            <span class="badge">Data engineering</span>
+          </div>
+          <a class="button button--link" href="https://www.linkedin.com/in/matteo-de-moor-216b0b226/" target="_blank" rel="noreferrer">Bekijk mijn LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <div class="site-footer__brand">
+          <img src="images/logo.png" alt="" aria-hidden="true" />
+          <div>
+            <p class="site-footer__title">Moor Webstudio</p>
+            <p class="site-footer__tagline">Websites die bedrijven laten groeien.</p>
+          </div>
+        </div>
+        <p class="site-footer__contact">Aalst, België · <a href="mailto:matteo.de.moor@skynet.be">matteo.de.moor@skynet.be</a></p>
+      </div>
+      <div>
+        <p class="site-footer__heading">Navigatie</p>
+        <ul class="site-footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="werkwijze.html">Werkwijze</a></li>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="over-mij.html">Over mij</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="site-footer__heading">Juridisch</p>
+        <ul class="site-footer__links">
+          <li><a href="privacybeleid.html">Privacybeleid</a></li>
+          <li><a href="algemene-voorwaarden.html">Algemene voorwaarden</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="site-footer__copyright">© <span id="current-year"></span> Moor Webstudio</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
