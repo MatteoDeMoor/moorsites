@@ -1,4 +1,4 @@
-# Moor Web Studio
+# Moor Webstudio
 
 Welcome to the source code for **Moor Web Studio**, a personal portfolio site showcasing digital design, development, and branding projects by Matteo De Moor.
 
