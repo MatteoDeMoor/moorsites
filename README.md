@@ -20,6 +20,11 @@ This repository contains the static assets that power the Moor Web Studio websit
 - **HTML5** for semantic structure (`index.html`).
 - **CSS3** for layout, typography, and animations (`styles.css`).
 - **JavaScript** for interactive behaviors and dynamic elements (`app.js`).
+- **XML Sitemap** for search indexing support (`sitemap.xml`).
+
+## Sitemap
+
+Submit [`sitemap.xml`](./sitemap.xml) to Google Search Console (or any other search engine webmaster tool) after deployment to help crawlers find the site quickly. The sitemap currently lists the root URL (`https://moorwebstudio.be/`) and the canonical HTML entry point (`https://moorwebstudio.be/index.html`). Update the `<lastmod>` timestamps whenever significant content updates are published.
 
 ## License
 
