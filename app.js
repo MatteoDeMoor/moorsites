@@ -74,7 +74,7 @@ const translations = {
     pricing: {
       eyebrow: "PAKKETTEN",
       title: "Kies wat bij je past",
-      description: "Alle pakketten omvatten ontwerp, ontwikkeling en basisoptimalisatie.",
+      description: "Alle vermelde prijzen zijn exclusief 21% btw.",
       featured: "Meest gekozen",
       cta: "Plan een kennismaking",
       plans: [
@@ -266,7 +266,7 @@ const translations = {
     pricing: {
       eyebrow: "PACKAGES",
       title: "Pick what fits",
-      description: "Every package includes design, development, and essential optimisation.",
+      description: "All listed prices are exclusive of VAT.",
       featured: "Most popular",
       cta: "Book an intro call",
       plans: [
