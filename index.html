@@ -2,42 +2,16 @@
 <html lang="nl">
 <head>
   <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title data-i18n="meta.title">Moor Webstudio – Duidelijke en betaalbare websites voor ondernemers</title>
-  <meta name="description"
-      content="Moor Webstudio bouwt snelle, duidelijke en onderhoudsvrije websites voor zelfstandigen en kleine bedrijven. Inclusief domein, hosting en ondersteuning."
-      data-i18n="meta.description" />  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Moor Webstudio" data-i18n="meta.ogTitle" />
-  <meta property="og:description" content="Websites die bedrijven laten groeien." data-i18n="meta.ogDescription" />
-  <meta property="og:url" content="https://moorwebstudio.be/" />
-  <meta property="og:image" content="https://moorwebstudio.be/images/Matteo.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Moor Webstudio" data-i18n="meta.twitterTitle" />
-  <meta name="twitter:description" content="Websites die bedrijven laten groeien." data-i18n="meta.twitterDescription" />
+  <title>Moor Webstudio – Websites die werken voor ondernemers</title>
+  <meta name="description" content="Moor Webstudio bouwt overzichtelijke, onderhoudsarme websites voor zelfstandigen en kleine bedrijven." />
   <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
-  <link rel="shortcut icon" href="images/logo.png" />
   <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json" id="organization-schema">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Moor Webstudio",
-    "slogan": "Websites die bedrijven laten groeien.",
-    "url": "https://moorwebstudio.be",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer service",
-      "email": "matteo.de.moor@skynet.be",
-      "areaServed": "BE"
-    }
-  }
-  </script>
 </head>
-<body>
+<body data-page="home">
   <header class="site-header" id="top">
     <nav class="nav" aria-label="Hoofd navigatie">
-      <a href="#top" class="nav__logo" aria-label="Moor Webstudio homepage">
+      <a href="index.html" class="nav__logo" aria-label="Moor Webstudio homepage">
         <img src="images/logo.png" alt="" aria-hidden="true" />
         <span>Moor Webstudio</span>
       </a>
@@ -48,35 +22,31 @@
       </button>
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link" data-i18n="nav.home"></a></li>
-          <li><a href="#services" class="nav__link" data-i18n="nav.services"></a></li>
-          <li><a href="#process" class="nav__link" data-i18n="nav.process"></a></li>
-          <li><a href="#pricing" class="nav__link" data-i18n="nav.pricing"></a></li>
-          <li><a href="#about" class="nav__link" data-i18n="nav.about"></a></li>
-          <li><a href="#contact" class="nav__link" data-i18n="nav.contact"></a></li>
+          <li><a href="index.html" class="nav__link" data-page="home">Home</a></li>
+          <li><a href="diensten.html" class="nav__link" data-page="diensten">Diensten</a></li>
+          <li><a href="werkwijze.html" class="nav__link" data-page="werkwijze">Werkwijze</a></li>
+          <li><a href="pakketten.html" class="nav__link" data-page="pakketten">Pakketten</a></li>
+          <li><a href="over-mij.html" class="nav__link" data-page="over-mij">Over mij</a></li>
+          <li><a href="contact.html" class="nav__link" data-page="contact">Contact</a></li>
         </ul>
         <div class="nav__actions">
-          <div class="language-toggle" role="group" aria-label="Taal selecteren">
-            <button class="language-toggle__button is-active" data-lang="nl" aria-pressed="true">NL</button>
-            <span class="language-toggle__divider">|</span>
-            <button class="language-toggle__button" data-lang="en" aria-pressed="false">EN</button>
-          </div>
-          <a href="#contact" class="button button--primary" data-i18n="nav.cta"></a>
+          <a href="contact.html" class="button button--primary">Plan een kennismaking</a>
         </div>
       </div>
     </nav>
   </header>
+
   <main>
     <section class="hero" id="home">
       <div class="container hero__content">
         <div class="hero__text">
-          <p class="hero__eyebrow" data-i18n="hero.eyebrow"></p>
-          <h1 class="hero__title">Moor Webstudio</h1>
-          <p class="hero__subtitle" data-i18n="hero.subtitle"></p>
-          <p class="hero__pitch" data-i18n="hero.pitch"></p>
+          <p class="hero__eyebrow">Websites voor zelfstandigen</p>
+          <h1 class="hero__title">Duidelijke websites die gewoon werken</h1>
+          <p class="hero__subtitle">Geen ingewikkeld platform, wel een snelle site met een vaste contactpersoon.</p>
+          <p class="hero__pitch">Ik ontwerp en bouw compacte websites voor kleine bedrijven, regel het technische werk en blijf beschikbaar voor updates.</p>
           <div class="hero__actions">
-            <a href="#pricing" class="button button--ghost" data-i18n="hero.secondaryCta"></a>
-            <a href="#contact" class="button button--primary" data-i18n="hero.primaryCta"></a>
+            <a href="pakketten.html" class="button button--ghost">Bekijk pakketten</a>
+            <a href="contact.html" class="button button--primary">Plan een kennismaking</a>
           </div>
         </div>
         <div class="hero__visual">
@@ -87,14 +57,14 @@
       </div>
     </section>
 
-    <section class="services" id="services">
+    <section class="services">
       <div class="container">
         <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="services.eyebrow"></p>
-          <h2 class="section-heading__title" data-i18n="services.title"></h2>
-          <p class="section-heading__description" data-i18n="services.description"></p>
+          <p class="section-heading__eyebrow">In het kort</p>
+          <h2 class="section-heading__title">Wat ik voor je kan regelen</h2>
+          <p class="section-heading__description">Een compacte kennismaking van de belangrijkste onderdelen. Op elke pagina vind je de details.</p>
         </div>
-        <div class="services__grid">
+        <div class="services__grid services__grid--links">
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" aria-hidden="true">
@@ -102,343 +72,178 @@
                 <path d="M2 36h44" stroke-width="4" stroke-linecap="round"></path>
               </svg>
             </div>
-            <h3 class="service-card__title" data-i18n="services.webdesign.title"></h3>
-            <p class="service-card__text" data-i18n="services.webdesign.text"></p>
-            <ul class="service-card__list">
-              <li data-i18n="services.webdesign.bullets.0"></li>
-              <li data-i18n="services.webdesign.bullets.1"></li>
-              <li data-i18n="services.webdesign.bullets.2"></li>
-            </ul>
+            <h3 class="service-card__title">Diensten</h3>
+            <p class="service-card__text">Webdesign, onderhoud en hosting op één plek zodat jij er geen omkijken naar hebt.</p>
+            <a class="button button--link" href="diensten.html">Meer over de diensten</a>
           </article>
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" aria-hidden="true">
-                <path d="M8 10h32v28H8z"></path>
-                <path d="M8 18h32" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M6 18h36M6 30h36" stroke-width="4" stroke-linecap="round" fill="none"></path>
+                <circle cx="24" cy="12" r="4"></circle>
               </svg>
             </div>
-            <h3 class="service-card__title" data-i18n="services.development.title"></h3>
-            <p class="service-card__text" data-i18n="services.development.text"></p>
-            <ul class="service-card__list">
-              <li data-i18n="services.development.bullets.0"></li>
-              <li data-i18n="services.development.bullets.1"></li>
-              <li data-i18n="services.development.bullets.2"></li>
-            </ul>
+            <h3 class="service-card__title">Werkwijze</h3>
+            <p class="service-card__text">Korte lijnen, snelle eerste versie en duidelijke stappen zodat je altijd weet waar we staan.</p>
+            <a class="button button--link" href="werkwijze.html">Bekijk de aanpak</a>
           </article>
           <article class="service-card">
             <div class="service-card__icon" aria-hidden="true">
               <svg viewBox="0 0 48 48" aria-hidden="true">
-                <path d="M10 34c6-10 12-10 18 0s12 10 18 0" stroke-width="4" stroke-linecap="round" fill="none"></path>
-                <circle cx="16" cy="14" r="6"></circle>
+                <rect x="8" y="10" width="32" height="24" rx="6"></rect>
+                <path d="M14 24h20" stroke-width="4" stroke-linecap="round"></path>
               </svg>
             </div>
-            <h3 class="service-card__title" data-i18n="services.optimization.title"></h3>
-            <p class="service-card__text" data-i18n="services.optimization.text"></p>
-            <ul class="service-card__list">
-              <li data-i18n="services.optimization.bullets.0"></li>
-              <li data-i18n="services.optimization.bullets.1"></li>
-              <li data-i18n="services.optimization.bullets.2"></li>
-            </ul>
+            <h3 class="service-card__title">Pakketten</h3>
+            <p class="service-card__text">Transparante startprijzen voor kleine en grotere sites, telkens inclusief responsive design.</p>
+            <a class="button button--link" href="pakketten.html">Naar de pakketten</a>
+          </article>
+          <article class="service-card">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 6c6 0 10 4 10 10s-4 10-10 10-10-4-10-10S18 6 24 6Z" fill="none" stroke-width="4" stroke-linecap="round"></path>
+                <path d="M8 42c2-6 8-10 16-10s14 4 16 10" fill="none" stroke-width="4" stroke-linecap="round"></path>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Over mij</h3>
+            <p class="service-card__text">Ik ben Matteo De Moor: zelfstandig webbouwer met een achtergrond in data engineering.</p>
+            <a class="button button--link" href="over-mij.html">Leer me kennen</a>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="process" id="process">
+    <section class="process">
       <div class="container">
         <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="process.eyebrow"></p>
-          <h2 class="section-heading__title" data-i18n="process.title"></h2>
-          <p class="section-heading__description" data-i18n="process.description"></p>
+          <p class="section-heading__eyebrow">Snel overzicht</p>
+          <h2 class="section-heading__title">Hoe we samenwerken</h2>
+          <p class="section-heading__description">Van kennismaking tot oplevering in vijf stappen. Wil je de details zien? Die staan op de werkwijze-pagina.</p>
         </div>
         <ol class="process__timeline">
           <li class="process-step" data-step="01">
-            <h3 class="process-step__title" data-i18n="process.steps.0.title"></h3>
-            <p class="process-step__text" data-i18n="process.steps.0.text"></p>
+            <h3 class="process-step__title">Kennismaking</h3>
+            <p class="process-step__text">Je vertelt wat je nodig hebt en welke informatie op de site moet staan.</p>
           </li>
           <li class="process-step" data-step="02">
-            <h3 class="process-step__title" data-i18n="process.steps.1.title"></h3>
-            <p class="process-step__text" data-i18n="process.steps.1.text"></p>
+            <h3 class="process-step__title">Structuur</h3>
+            <p class="process-step__text">Samen bepalen we de pagina’s en indeling die het best bij je verhaal passen.</p>
           </li>
           <li class="process-step" data-step="03">
-            <h3 class="process-step__title" data-i18n="process.steps.2.title"></h3>
-            <p class="process-step__text" data-i18n="process.steps.2.text"></p>
+            <h3 class="process-step__title">Eerste versie</h3>
+            <p class="process-step__text">Ik bouw meteen in code zodat je een klikbare site krijgt om door te nemen.</p>
           </li>
           <li class="process-step" data-step="04">
-            <h3 class="process-step__title" data-i18n="process.steps.3.title"></h3>
-            <p class="process-step__text" data-i18n="process.steps.3.text"></p>
+            <h3 class="process-step__title">Bijsturen</h3>
+            <p class="process-step__text">Korte feedbackrondes tot alles klopt, inclusief tekst en beeld.</p>
           </li>
           <li class="process-step" data-step="05">
-            <h3 class="process-step__title" data-i18n="process.steps.4.title"></h3>
-            <p class="process-step__text" data-i18n="process.steps.4.text"></p>
+            <h3 class="process-step__title">Live & onderhoud</h3>
+            <p class="process-step__text">Ik regel domein en hosting en blijf beschikbaar voor updates.</p>
           </li>
         </ol>
+        <div class="process__cta">
+          <a class="button" href="werkwijze.html">Lees de volledige werkwijze</a>
+        </div>
       </div>
     </section>
 
-    <section class="pricing" id="pricing">
+    <section class="pricing" aria-labelledby="pricing-title">
       <div class="container">
         <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="pricing.eyebrow"></p>
-          <h2 class="section-heading__title" data-i18n="pricing.title"></h2>
-          <p class="section-heading__description" data-i18n="pricing.description"></p>
+          <p class="section-heading__eyebrow">Budget in beeld</p>
+          <h2 class="section-heading__title" id="pricing-title">Vanaf-prijzen voor jouw website</h2>
+          <p class="section-heading__description">Elke optie bevat een uniek design en responsive uitvoering. Alle prijzen zijn exclusief 21% btw.</p>
         </div>
         <div class="pricing__grid">
           <article class="pricing-card">
-            <p class="pricing-card__plan" data-i18n="pricing.plans.0.name"></p>
-            <p class="pricing-card__price" data-i18n="pricing.plans.0.price"></p>
+            <div class="pricing-card__header">
+              <p class="pricing-card__name">Budget</p>
+              <p class="pricing-card__price">Vanaf €495</p>
+            </div>
             <ul class="pricing-card__features">
-              <li data-i18n="pricing.plans.0.features.0"></li>
-              <li data-i18n="pricing.plans.0.features.1"></li>
-              <li data-i18n="pricing.plans.0.features.2"></li>
+              <li>1 pagina</li>
+              <li>Uniek design</li>
+              <li>Responsive design</li>
             </ul>
-            <a href="#contact" class="button button--ghost" data-i18n="pricing.cta"></a>
+            <a class="button button--ghost" href="pakketten.html">Zie alle pakketten</a>
           </article>
-          <article class="pricing-card pricing-card--featured">
-            <p class="pricing-card__plan" data-i18n="pricing.plans.1.name"></p>
-            <p class="pricing-card__price" data-i18n="pricing.plans.1.price"></p>
+          <article class="pricing-card is-featured">
+            <div class="pricing-card__header">
+              <p class="pricing-card__eyebrow">Meest gekozen</p>
+              <p class="pricing-card__name">Basic</p>
+              <p class="pricing-card__price">Vanaf €745</p>
+            </div>
             <ul class="pricing-card__features">
-              <li data-i18n="pricing.plans.1.features.0"></li>
-              <li data-i18n="pricing.plans.1.features.1"></li>
-              <li data-i18n="pricing.plans.1.features.2"></li>
+              <li>Tot 5 pagina's</li>
+              <li>Uniek design</li>
+              <li>Responsive design</li>
             </ul>
-            <a href="#contact" class="button button--primary" data-i18n="pricing.cta"></a>
-          </article>
-          <article class="pricing-card">
-            <p class="pricing-card__plan" data-i18n="pricing.plans.2.name"></p>
-            <p class="pricing-card__price" data-i18n="pricing.plans.2.price"></p>
-            <ul class="pricing-card__features">
-              <li data-i18n="pricing.plans.2.features.0"></li>
-              <li data-i18n="pricing.plans.2.features.1"></li>
-              <li data-i18n="pricing.plans.2.features.2"></li>
-            </ul>
-            <a href="#contact" class="button button--ghost" data-i18n="pricing.cta"></a>
+            <a class="button button--primary" href="pakketten.html">Vergelijk pakketten</a>
           </article>
           <article class="pricing-card">
-            <p class="pricing-card__plan" data-i18n="pricing.plans.3.name"></p>
-            <p class="pricing-card__price" data-i18n="pricing.plans.3.price"></p>
+            <div class="pricing-card__header">
+              <p class="pricing-card__name">Plus</p>
+              <p class="pricing-card__price">Vanaf €995</p>
+            </div>
             <ul class="pricing-card__features">
-              <li data-i18n="pricing.plans.3.features.0"></li>
-              <li data-i18n="pricing.plans.3.features.1"></li>
-              <li data-i18n="pricing.plans.3.features.2"></li>
-              <li data-i18n="pricing.plans.3.features.3"></li>
+              <li>Tot 10 pagina's</li>
+              <li>Uniek design</li>
+              <li>Responsive design</li>
             </ul>
-            <a href="#contact" class="button button--ghost" data-i18n="pricing.cta"></a>
+            <a class="button button--ghost" href="pakketten.html">Bekijk details</a>
+          </article>
+          <article class="pricing-card">
+            <div class="pricing-card__header">
+              <p class="pricing-card__name">Flex</p>
+              <p class="pricing-card__price">Op maat</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Extra pagina's of functionaliteit</li>
+              <li>Maandelijkse ondersteuning mogelijk</li>
+              <li>Facturatie per maand of project</li>
+            </ul>
+            <a class="button button--ghost" href="pakketten.html">Vraag een voorstel</a>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="about" id="about">
-      <div class="container about__layout">
-        <div class="about__media">
-          <img src="images/Matteo.jpg" alt="Portret van Matteo De Moor" width="320" height="320" loading="lazy" />
-        </div>
-        <div class="about__content">
-          <div class="section-heading section-heading--left">
-            <p class="section-heading__eyebrow" data-i18n="about.eyebrow"></p>
-            <h2 class="section-heading__title" data-i18n="about.title"></h2>
-            <p class="section-heading__description" data-i18n="about.description"></p>
-          </div>
-          <a class="about__linkedin" href="https://www.linkedin.com/in/matteo-de-moor/" target="_blank" rel="noopener" data-i18n="about.linkedin"></a>
-          <ul class="about__skills">
-            <li data-i18n="about.skills.0"></li>
-            <li data-i18n="about.skills.1"></li>
-            <li data-i18n="about.skills.2"></li>
-            <li data-i18n="about.skills.3"></li>
-          </ul>
-          <div class="about__badges">
-            <div class="about__badge">
-              <span class="about__badge-number" data-i18n="about.badges.0.value"></span>
-              <span class="about__badge-label" data-i18n="about.badges.0.label"></span>
-            </div>
-            <div class="about__badge">
-              <span class="about__badge-number" data-i18n="about.badges.1.value"></span>
-              <span class="about__badge-label" data-i18n="about.badges.1.label"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials" id="testimonials" aria-label="Testimonials">
-      <div class="container">
-        <div class="section-heading">
-          <p class="section-heading__eyebrow" data-i18n="testimonials.eyebrow"></p>
-          <h2 class="section-heading__title" data-i18n="testimonials.title"></h2>
-          <p class="section-heading__description" data-i18n="testimonials.description"></p>
-        </div>
-        <div class="testimonial-slider" aria-roledescription="carousel" aria-label="Klantreacties">
-          <div class="testimonial-slider__track" role="group">
-            <article class="testimonial" aria-label="Testimonial 1">
-              <blockquote class="testimonial__quote" data-i18n="testimonials.items.0.quote"></blockquote>
-              <p class="testimonial__author" data-i18n="testimonials.items.0.author"></p>
-            </article>
-            <article class="testimonial" aria-label="Testimonial 2">
-              <blockquote class="testimonial__quote" data-i18n="testimonials.items.1.quote"></blockquote>
-              <p class="testimonial__author" data-i18n="testimonials.items.1.author"></p>
-            </article>
-            <article class="testimonial" aria-label="Testimonial 3">
-              <blockquote class="testimonial__quote" data-i18n="testimonials.items.2.quote"></blockquote>
-              <p class="testimonial__author" data-i18n="testimonials.items.2.author"></p>
-            </article>
-          </div>
-          <div class="testimonial-slider__controls">
-            <button class="testimonial-slider__button" data-direction="prev" aria-label="Vorige testimonial">&#8592;</button>
-            <button class="testimonial-slider__button" data-direction="next" aria-label="Volgende testimonial">&#8594;</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact__layout">
-        <div class="contact__form-wrapper">
-          <div class="section-heading section-heading--left">
-            <p class="section-heading__eyebrow" data-i18n="contact.eyebrow"></p>
-            <h2 class="section-heading__title" data-i18n="contact.title"></h2>
-            <p class="section-heading__description" data-i18n="contact.description"></p>
-          </div>
-          <form id="contact-form" class="contact-form" novalidate>
-            <div class="contact-form__group">
-              <label for="from_name" data-i18n="contact.form.name.label"></label>
-              <input type="text" id="from_name" name="from_name" autocomplete="name" required placeholder="" data-placeholder="contact.form.name.placeholder" />
-              <span class="contact-form__error" data-i18n="contact.form.name.error"></span>
-            </div>
-            <div class="contact-form__group">
-              <label for="reply_to" data-i18n="contact.form.email.label"></label>
-              <input type="email" id="reply_to" name="reply_to" autocomplete="email" required placeholder="" data-placeholder="contact.form.email.placeholder" />
-              <span class="contact-form__error" data-i18n="contact.form.email.error"></span>
-            </div>
-            <div class="contact-form__group">
-              <label for="company_name" data-i18n="contact.form.company.label"></label>
-              <input type="text" id="company_name" name="company_name" autocomplete="organization" placeholder="" data-placeholder="contact.form.company.placeholder" />
-            </div>
-            <div class="contact-form__group">
-              <label for="message" data-i18n="contact.form.message.label"></label>
-              <textarea id="message" name="message" rows="5" required placeholder="" data-placeholder="contact.form.message.placeholder"></textarea>
-              <span class="contact-form__error" data-i18n="contact.form.message.error"></span>
-            </div>
-            <button type="submit" class="button button--primary" data-i18n="contact.form.submit"></button>
-            <p id="status" class="contact-form__success" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-        <aside class="contact__info">
-          <h3 class="contact__info-title" data-i18n="contact.info.title"></h3>
-          <p data-i18n="contact.info.text"></p>
-          <ul class="contact__info-list">
-            <li>
-              <a class="contact__email" href="mailto:matteo.de.moor@skynet.be" data-i18n="contact.info.email"></a>
-            </li>
-            <li data-i18n="contact.info.location"></li>
-          </ul>
-        </aside>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer__layout">
-      <div class="footer__brand">
-        <img src="images/logo.png" alt="Moor Webstudio logo" width="160" height="160" loading="lazy" />
-        <p data-i18n="footer.tagline"></p>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div>
+        <div class="site-footer__brand">
+          <img src="images/logo.png" alt="" aria-hidden="true" />
+          <div>
+            <p class="site-footer__title">Moor Webstudio</p>
+            <p class="site-footer__tagline">Websites die bedrijven laten groeien.</p>
+          </div>
+        </div>
+        <p class="site-footer__contact">Aalst, België · <a href="mailto:matteo.de.moor@skynet.be">matteo.de.moor@skynet.be</a></p>
       </div>
-      <div class="footer__links">
-        <h3 class="footer__title" data-i18n="footer.links"></h3>
-        <ul>
-          <li><a href="#home" data-i18n="nav.home"></a></li>
-          <li><a href="#services" data-i18n="nav.services"></a></li>
-          <li><a href="#pricing" data-i18n="nav.pricing"></a></li>
-          <li><a href="#contact" data-i18n="nav.contact"></a></li>
+      <div>
+        <p class="site-footer__heading">Navigatie</p>
+        <ul class="site-footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="werkwijze.html">Werkwijze</a></li>
+          <li><a href="pakketten.html">Pakketten</a></li>
+          <li><a href="over-mij.html">Over mij</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer__social">
-        <h3 class="footer__title" data-i18n="footer.follow"></h3>
-        <a
-          href="https://www.linkedin.com/company/moorwebstudio"
-          class="footer__social-link"
-          target="_blank"
-          rel="noopener"
-        >
-          <span class="footer__icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-              <path
-                d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h3.96v12H3V9Zm6.24 0H13v1.75h.05c.55-1.04 1.89-2.14 3.89-2.14 4.16 0 4.93 2.74 4.93 6.3V21H17V15.1c0-1.4-.02-3.2-1.95-3.2-1.95 0-2.25 1.53-2.25 3.1V21H9.24V9Z"
-              ></path>
-            </svg>
-          </span>
-          <span data-i18n="footer.linkedin"></span>
-        </a>
-      </div>
-      <div class="footer__meta">
-        <p class="footer__copyright">© <span id="current-year"></span> Moor Webstudio</p>
+      <div>
+        <p class="site-footer__heading">Juridisch</p>
+        <ul class="site-footer__links">
+          <li><a href="privacybeleid.html">Privacybeleid</a></li>
+          <li><a href="algemene-voorwaarden.html">Algemene voorwaarden</a></li>
+        </ul>
       </div>
     </div>
+    <p class="site-footer__copyright">© <span id="current-year"></span> Moor Webstudio</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script>
-    (function () {
-      const PUBLIC_KEY = "4FlHn9aB_co2Go9CI";
-      const SERVICE_ID = "service_fsrg2lg";
-      const TEMPLATE_ID = "template_mic35lm";
-      const form = document.getElementById("contact-form");
-      const statusNode = document.getElementById("status");
 
-      const setStatus = (message, isError = false) => {
-        if (!statusNode) return;
-        statusNode.textContent = message;
-        if (message) {
-          statusNode.classList.add("is-visible");
-        } else {
-          statusNode.classList.remove("is-visible");
-        }
-        statusNode.classList.toggle("is-error", Boolean(isError));
-      };
-
-      if (!form || !statusNode) {
-        return;
-      }
-
-      if (typeof emailjs === "undefined") {
-        console.error("EmailJS bibliotheek kon niet geladen worden.");
-        setStatus("Er ging iets mis. Probeer later opnieuw.", true);
-        return;
-      }
-
-      if (!PUBLIC_KEY) {
-        console.error("EmailJS public key is niet ingesteld. Zorg dat EMAILJS_API_KEY beschikbaar is.");
-        setStatus("Er ging iets mis. Probeer later opnieuw.", true);
-        return;
-      }
-
-      emailjs.init(PUBLIC_KEY);
-
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-
-        if (typeof window.moorsitesValidateContactForm === "function" && !window.moorsitesValidateContactForm()) {
-          setStatus("");
-          return;
-        }
-
-        setStatus("Bezig met verzenden...");
-
-        emailjs
-          .sendForm(SERVICE_ID, TEMPLATE_ID, form)
-          .then(function () {
-            setStatus("Bericht verzonden! 👍");
-            form.reset();
-            if (typeof window.moorsitesClearContactFormState === "function") {
-              window.moorsitesClearContactFormState();
-            }
-          })
-          .catch(function (error) {
-            console.error("EmailJS fout:", error);
-            setStatus("Er ging iets mis. Probeer later opnieuw.", true);
-          });
-      });
-    })();
-  </script>
-  <script type="module" src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
