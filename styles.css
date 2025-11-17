@@ -1277,7 +1277,6 @@ img {
   }
 
   .legal__intro {
-    position: sticky;
-    top: 120px;
+    position: static;
   }
 }

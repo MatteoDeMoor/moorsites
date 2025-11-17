@@ -713,7 +713,10 @@ portfolioFilters.forEach((button) => {
   });
 });
 
+const hasSlider = testimonialTrack && testimonialSlides.length > 0;
+
 const moveSlider = (direction) => {
+  if (!hasSlider) return;
   const totalSlides = testimonialSlides.length;
   currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
   testimonialTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
@@ -728,7 +731,7 @@ testimonialButtons.forEach((button) => {
 });
 
 const startSlider = () => {
-  if (prefersReducedMotion) return;
+  if (prefersReducedMotion || !hasSlider) return;
   sliderInterval = setInterval(() => moveSlider(1), 6000);
 };
 
@@ -737,7 +740,7 @@ const restartSlider = () => {
   startSlider();
 };
 
-if (sliderContainer) {
+if (sliderContainer && hasSlider) {
   sliderContainer.addEventListener('mouseenter', () => sliderInterval && clearInterval(sliderInterval));
   sliderContainer.addEventListener('mouseleave', restartSlider);
 }
